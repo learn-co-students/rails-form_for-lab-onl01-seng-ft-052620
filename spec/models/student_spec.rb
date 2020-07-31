@@ -9,4 +9,8 @@ describe Student do
     expect(@student).to be_valid
   end
 
+  it 'can be represented as a string' do
+    expect(@student.to_s).to eq("Daenerys Targaryen")
+  end
+
 end

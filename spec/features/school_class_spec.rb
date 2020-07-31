@@ -13,7 +13,7 @@ describe 'form page' do
     fill_in 'school_class_title', with: "Software Engineering"
     fill_in 'school_class_room_number', with: 10
 
-    click_on "Create School class"
+    click_on "Create School Class"
 
     expect(page).to have_content("Software Engineering")
   end
@@ -26,7 +26,7 @@ describe 'form page' do
     fill_in 'school_class_title', with: "Risk Analysis"
     fill_in 'school_class_room_number', with: 10
 
-    click_on "Update School class"
+    click_on "Update School Class"
 
     expect(page).to have_content("Risk Analysis")
   end
@@ -37,7 +37,7 @@ describe 'form page' do
     fill_in 'school_class_title', with: "Sabermetrics"
     fill_in 'school_class_room_number', with: 42
 
-    click_on "Create School class"
+    click_on "Create School Class"
 
     expect(SchoolClass.last.title).to eq("Sabermetrics")
   end
@@ -50,7 +50,7 @@ describe 'form page' do
     fill_in 'school_class_title', with: "Machine Learning"
     fill_in 'school_class_room_number', with: 11
 
-    click_on "Update School class"
+    click_on "Update School Class"
 
     expect(SchoolClass.last.title).to eq("Machine Learning")
   end
