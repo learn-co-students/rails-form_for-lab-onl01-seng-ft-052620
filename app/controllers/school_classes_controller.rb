@@ -1,6 +1,5 @@
 class SchoolClassesController < ApplicationController 
-    def index
-        
+    def index  
     end 
 
     def new 
